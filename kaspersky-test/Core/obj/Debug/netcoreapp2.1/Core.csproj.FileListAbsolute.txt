@@ -1,0 +1,9 @@
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\bin\Debug\netcoreapp2.1\Core.deps.json
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\bin\Debug\netcoreapp2.1\Core.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\obj\Debug\netcoreapp2.1\Core.csprojAssemblyReference.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\obj\Debug\netcoreapp2.1\Core.csproj.CoreCompileInputs.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfoInputs.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfo.cs
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\obj\Debug\netcoreapp2.1\Core.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Core\obj\Debug\netcoreapp2.1\Core.pdb

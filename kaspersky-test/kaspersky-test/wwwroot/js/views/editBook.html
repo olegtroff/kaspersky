@@ -1,0 +1,49 @@
+﻿<div id="uploadImageForm" ng-form="editBookForm">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Edit book</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div class="form-group" ng-class="{ 'has-error' : editBookForm.title.$invalid && !editBookForm.title.$pristine }">
+            <label class="control-label">Title</label>
+            <input name="title" class="form-control input-lg" type="text" maxlength="30" ng-value="$ctrl.currentItem.book.title" ng-model="$ctrl.currentItem.book.title" required />
+            <p ng-show="editBookForm.title.$invalid && !editBookForm.title.$pristine" class="help-block">Field is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editBookForm.pageCount.$invalid && !editBookForm.pageCount.$pristine }">
+            <label class="control-label">Page count</label>
+            <input name="pageCount" class="form-control input-lg" type="number" min="0" max="10000" value="0" ng-value="$ctrl.currentItem.book.pageCount" ng-model="$ctrl.currentItem.book.pageCount" required />
+            <p ng-show="editBookForm.pageCount.$invalid && !editBookForm.pageCount.$pristine" class="help-block">Field is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editBookForm.isbn13.$invalid && !editBookForm.isbn13.$pristine }">
+            <label class="control-label">ISBN (sample 978-1-4493-4485-6)</label>
+            <input class="form-control input-lg" name="isbn13" isbn13 placeholder="978-1-4493-4485-6" type="text" ng-value="$ctrl.currentItem.book.isbn" ng-model="$ctrl.currentItem.book.isbn" />
+            <p ng-show="editBookForm.isbn13.$invalid && !editBookForm.isbn13.$pristine" class="help-block">Please enter valid isbn 13</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editBookForm.year.$invalid && !editBookForm.year.$pristine }">
+            <label class="control-label">Year</label>
+            <input name="year" class="form-control input-lg" type="number" min="1800" ng-value="$ctrl.currentItem.book.year" ng-model="$ctrl.currentItem.book.year" />
+            <p ng-show="editBookForm.year.$invalid && !editBookForm.year.$pristine" class="help-block">Min value is 1800.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editBookForm.selectedauthor.$invalid && !editBookForm.selectedauthor.$pristine }">
+            <select name="selectedauthor" required class="form-control select-field" multiple="multiple" ng-model="$ctrl.currentItem.book.authors">
+                <option ng-repeat="item in $ctrl.currentItem.authors" value="{{item.rowKey}}">{{item.name}} {{item.lastName}}</option>
+            </select>
+            <p ng-show="editBookForm.selectedauthor.$invalid && !editBookForm.selectedauthor.$pristine" class="help-block">Select author.</p>
+        </div>
+        <div class="form-group">
+            <select class="form-control select-field" name="publishings" ng-model="$ctrl.currentItem.book.publishing">
+                <option ng-repeat="item in $ctrl.currentItem.publishings" value="{{item.rowKey}}">{{item.name}}</option>
+            </select>
+        </div>
+
+        <input type="file" id="bookImage" ng-model="$ctrl.file" />
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-disabled="editBookForm.$invalid" type="button" ng-click="$ctrl.saveData()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.select-field').select2();
+    });
+</script>

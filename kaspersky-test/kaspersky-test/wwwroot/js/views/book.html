@@ -1,0 +1,31 @@
+﻿<div data-ng-controller="bookController as vm" data-ng-init="vm.init()">
+    <h1>Books</h1>
+    <span class="glyphicon glyphicon-plus custombutton" data-ng-click="vm.editItem()"></span>
+    <table style="width: 100%">
+        <tr>
+            <th>Title<span class="glyphicon glyphicon-sort" data-ng-click="vm.sortList(false)"></span></th>
+            <th>Page count</th>
+            <th>Isbn</th>
+            <th>Authors</th>
+            <th>Publishing</th>
+            <th>Year<span class="glyphicon glyphicon-sort"  data-ng-click="vm.sortList(true)"></span></th>
+            <th>Image</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="item in vm.data" style="border-bottom: 1px solid lightgray">
+            <td>{{item.title}}</td>
+            <td>{{item.pageCount}}</td>
+            <td>{{item.isbn}}</td>
+            <td>
+                <div ng-repeat="item in item.authorNames">{{item}}</div>
+            </td>
+            <td>{{item.publishing}}</td>
+            <td>{{item.year}}</td>
+            <td><img ng-if="item.image !== null" ng-src="{{item.image}}" width="100" /></td>
+            <td>
+                <span class="glyphicon glyphicon-pencil custombutton" data-ng-click="vm.editItem(item.id)"></span>
+                <span class="glyphicon glyphicon-remove custombutton" data-ng-click="vm.deleteItem(item.id)"></span>
+            </td>
+        </tr>
+    </table>
+</div>

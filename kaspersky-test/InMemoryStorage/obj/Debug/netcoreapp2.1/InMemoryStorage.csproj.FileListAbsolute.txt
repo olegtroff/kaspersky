@@ -1,0 +1,9 @@
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\bin\Debug\netcoreapp2.1\InMemoryStorage.deps.json
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\bin\Debug\netcoreapp2.1\InMemoryStorage.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\bin\Debug\netcoreapp2.1\InMemoryStorage.pdb
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\obj\Debug\netcoreapp2.1\InMemoryStorage.csprojAssemblyReference.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\obj\Debug\netcoreapp2.1\InMemoryStorage.csproj.CoreCompileInputs.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\obj\Debug\netcoreapp2.1\InMemoryStorage.AssemblyInfoInputs.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\obj\Debug\netcoreapp2.1\InMemoryStorage.AssemblyInfo.cs
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\obj\Debug\netcoreapp2.1\InMemoryStorage.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\InMemoryStorage\obj\Debug\netcoreapp2.1\InMemoryStorage.pdb

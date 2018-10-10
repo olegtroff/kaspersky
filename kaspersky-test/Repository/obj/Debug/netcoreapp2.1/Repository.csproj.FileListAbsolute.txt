@@ -1,0 +1,14 @@
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\Core.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\InMemoryStorage.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\bin\Debug\netcoreapp2.1\InMemoryStorage.pdb
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+C:\Work\Kaspersky\kaspersky\kaspersky-test\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

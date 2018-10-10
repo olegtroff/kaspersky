@@ -1,0 +1,17 @@
+﻿<div data-ng-controller="authorController as vm" data-ng-init="vm.init()">
+    <h1>Authors</h1>
+    <span class="glyphicon glyphicon-plus custombutton" data-ng-click="vm.editItem()"></span>
+    <table style="width: 100%">
+        <tr>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="item in vm.data">
+            <td>{{item.name}} {{item.lastName}}</td>
+            <td>
+                <span class="glyphicon glyphicon-pencil custombutton" data-ng-click="vm.editItem(item.rowKey)"></span>
+                <span class="glyphicon glyphicon-remove custombutton" data-ng-click="vm.deleteItem(item.rowKey)"></span>
+            </td>
+        </tr>
+    </table>
+</div>

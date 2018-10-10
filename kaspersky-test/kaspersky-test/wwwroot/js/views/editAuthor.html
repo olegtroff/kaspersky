@@ -1,0 +1,24 @@
+﻿<div ng-form="editAuthorForm">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Edit author</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div ng-if="$ctrl.serverError">
+            {{$ctrl.serverMessage}}
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editAuthorForm.name.$invalid && !editAuthorForm.name.$pristine }">
+            <label class="control-label">Name</label>
+            <input name="name" class="form-control input-lg" maxlength="20" type="text" ng-value="$ctrl.currentItem.name" ng-model="$ctrl.currentItem.name" required />
+            <p ng-show="editAuthorForm.name.$invalid && !editAuthorForm.name.$pristine" class="help-block">Field is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : editAuthorForm.lastname.$invalid && !editAuthorForm.lastname.$pristine }">
+            <label class="control-label">Last name</label>
+            <input name="lastname" class="form-control input-lg" maxlength="20" type="text" ng-value="$ctrl.currentItem.lastName" ng-model="$ctrl.currentItem.lastName" required />
+            <p ng-show="editAuthorForm.lastname.$invalid && !editAuthorForm.lastname.$pristine" class="help-block">Field is required.</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-disabled="editAuthorForm.$invalid" ng-click="$ctrl.saveData()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+    </div>
+</div>
